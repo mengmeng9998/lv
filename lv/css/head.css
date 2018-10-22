@@ -1,0 +1,75 @@
+.header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	min-width: 1260px;
+	background-color: #150d0f;
+}
+.head {
+	width: 1260px;
+	height: 55px;
+	margin: 0 auto;
+}
+.nav1::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.nav1 >li:hover {
+	cursor: pointer;
+	color: #fff;
+}
+.nav1 > li {
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 2px;
+	font-size: 15px;
+	color: #bfa69a;
+}
+.nav1 > li:nth-child(1){
+	margin-left: 15px;
+}
+.nav1 > li:nth-child(1) > a{
+	color: #fff;
+}
+.nav1 > li:nth-child(2) {
+	margin-left: 180px;
+}
+.nav1 > li:nth-child(2):hover,
+.nav1 > li:nth-child(3):hover,
+.nav1 > li:nth-child(4):hover,
+.nav1 > li:nth-child(5):hover,
+.nav1 > li:nth-child(6):hover,
+.nav1 > li:nth-child(7):hover,
+.nav1 > li:nth-child(8):hover,
+.nav1 > li:nth-child(9):hover,
+.nav1 > li:nth-child(10):hover,
+.nav1 > li:nth-child(11):hover,
+.nav1 > li:nth-child(12):hover{
+	border-bottom: 3px solid #fff;
+}
+.nav1 > li:nth-child(3),
+.nav1 > li:nth-child(4),
+.nav1 > li:nth-child(5),
+.nav1 > li:nth-child(6){
+	margin-left: 25px;
+}
+.nav1>li:nth-child(7){
+	margin-left: 180px;
+}
+.nav1>li:nth-child(8){
+	margin-left: 10px;
+}
+.nav1>li:nth-child(9),
+.nav1>li:nth-child(10),
+.nav1>li:nth-child(11){
+	margin-left: 13px;
+}
+.nav1>li>i{
+	font-size: 20px;
+	text-align: center;
+}
+.nav1>li:nth-child(13){
+	cursor: default;
+}

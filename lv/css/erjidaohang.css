@@ -1,0 +1,93 @@
+.nav1>li{
+	position: relative;
+}
+.sub-nav {
+	width: 940px;
+	height: 450px;
+	position: absolute;
+	left: -270px;
+	top: 75px;
+	display: none;
+}
+.sub-nav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.sub-nav>div {
+	float: left;
+}
+.sub-nav .left-nav {
+	width: 260px;
+	height: 450px;
+	background-color: #443228;
+	text-align: left;
+	font-size: 14px;
+	color: #bfa69a;
+}
+.left-nav h2 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: normal;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.left-nav li:first-child {
+	margin-top: 10px;
+}
+.left-nav li {
+	box-sizing: border-box;
+	padding: 3px;
+	margin-top: 5px;
+	margin-left: 20px;
+	line-height: 20px;
+}
+.left-nav li:visited{
+	background-color: #fff;
+}
+.left-nav li:hover {
+	cursor: pointer;
+	color: #fff;
+}
+.right-nav {
+	width: 680px;
+	height: 450px;
+	background-color: #fff;
+}
+.nav1 > li:hover > .sub-nav {
+	display: block;
+}
+
+.sub-nav1{
+	width: 540px;
+	position: absolute;
+	top: 48px;
+	left: -200px;
+	display: none;
+}
+.sub-nav1>p{
+	float: right;
+}
+.sub-nav1>input{
+	box-sizing: border-box;
+	width: 470px;
+	height: 40px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	background-color: #999;
+	border:1px solid #000;
+	box-shadow: 2px 2px 5px #000;
+}
+.nav1>li:hover>.sub-nav1{
+	display: block;
+}
+.sub-nav1>p{
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #767676;
+	color: #fff;
+	margin-top: 5px;
+	margin-left: -8px;
+}

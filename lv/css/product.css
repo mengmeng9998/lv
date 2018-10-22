@@ -1,0 +1,288 @@
+.html,.body,.container {
+	width: 100%;
+}
+.navv{
+	width: 100%;
+	min-width: 1260px;
+}
+.nav {
+	width: 1260px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 2px;
+	margin: 0 auto;
+}
+.nav > a {
+	text-decoration: underline;
+}
+.nav > a:hover {
+	color: #8b8ba7;
+}
+.nav>p{
+	font-size: 14px;
+	float: right;
+	margin-right: 10px;
+}
+.nav>span:hover,.nav>p:hover{
+	cursor: pointer;
+}
+.article{
+	width: 100%;
+}
+.content{
+	width: 1260px;
+	margin: 0 auto;
+	background-size: teal;
+}
+.content::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content>div{
+	float: left;
+}
+.left-content{
+	width: 945px;
+	height: 1525px;
+}
+.right-content{
+	width: 315px;
+	height: 1525px;
+}
+.right-content>p{
+	letter-spacing: 2px;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+.right-content>.xuan>li{
+	box-sizing: border-box;
+	width: 266px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 5px;
+}
+.right-content>.xuan>li:last-child>select{
+	width: 170px;
+	height: 25px;
+	color: #979797;
+}
+.price{
+	font-size: 18px;
+	color: #533f34;
+	letter-spacing: 2px;
+	text-align: center;
+	height: 58px;
+	line-height: 58px;
+}
+.bag{
+	width: 260px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #533f34;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+	transition: all 0.5s linear;
+}
+.bag:hover{
+	cursor: pointer;
+	background-color: #000;
+}
+.narrate{
+	width: 260px;
+	margin: 0 auto;
+	font-size: 10px;
+	color: #533f34;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+.narrate::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.narrate>p:first-child{
+	float: left;
+}
+.narrate>p:last-child{
+	float: right;
+	border:1px solid #ccc;
+	margin-top: 8px;
+}
+.more{
+	font-size: 14px;
+	text-align: center;
+	width: 260px;
+	margin: 0 auto;
+}
+.more>li:nth-child(1){
+	box-sizing: border-box;
+	height: 70px;
+	padding-top: 18px;
+	border-bottom: 1px solid #ccc;
+}
+.more>li>a{
+	padding-right: 10px;
+}
+.more>li:nth-child(1)~li{
+	box-sizing: border-box;
+	height: 60px;
+	padding-top: 15px;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+.neirong{
+	margin: 0;
+	line-height: 25px;
+}
+.start{
+	width: 75px;
+	height: 35px;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 2em;
+	margin-top: -20px;
+	background-color: #533f34;
+	transition: all 0.5s linear;
+}
+.start:hover{
+	background-color: #000;
+	cursor: pointer;
+}
+.nav-0>li{
+	width: 260px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+
+
+.left-content{
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.back{
+	margin: 20px 0 0 10px;
+	letter-spacing: 1px;
+	font-size: 13px;
+}
+.lens{
+	text-align: right;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+.lens>i{
+	font-size: 25px;
+}
+.picture>li:first-child{
+	margin-top: 50px;
+}
+.picture>li{
+	margin-left: 110px;
+	margin-top: 3px;
+	width: 70px;
+}
+.picture>li>img{
+	width: 70px;
+	border: 1px solid rgba(153,153,153,0.5);
+}
+.picture>li>img:hover{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.picture{
+	position: relative;
+}
+.big>img{
+	width: 450px;
+	position: absolute;
+	left: 330px;
+	top: -70px;
+}
+.big1>img{
+	width: 450px;
+	position: absolute;
+	left: 330px;
+	top: -70px;
+	display: none;
+}
+.picture>li:nth-child(2):hover>div>img,
+.picture>li:nth-child(3):hover>div>img,
+.picture>li:nth-child(4):hover>div>img{
+	display: block;
+}
+.wenzi{
+	width: 865px;
+	margin: 0 auto;
+	margin-top: 100px;
+	letter-spacing: 2px;
+}
+hr{
+	opacity: 0.3;
+	margin-top: 80px;
+}
+.h2{
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 25px;
+	color: #6d6d6e;
+}
+.like>p{
+	color: #a5a5aa;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 10px;
+}
+.like>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.like>ul>li{
+	box-sizing: border-box;
+	width: 314px;
+	float: left;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.like>ul>li:nth-child(1),
+.like>ul>li:nth-child(2){
+	border-right: 1px solid #ccc;
+}
+
+.like>ul>li>a>img{
+	width:250px;
+	margin: 0 auto;
+}
+.like>ul>li>a>p{
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.history{
+	margin-top: 110px;
+}
+.history>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.history>ul>li{
+	float: left;	
+	margin-top: 30px;
+}

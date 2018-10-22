@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="./css/commom.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+	<link rel="stylesheet" href="./css/head.css">
+	<link rel="stylesheet" href="./css/foot.css">
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<link rel="stylesheet" href="./font1/iconfont.css">
+	<link rel="stylesheet" href="./font2/iconfont.css">
+	<link rel="stylesheet" href="./css/erjidaohang.css">
+	
+	<style>
+		.nav {
+			width: 100%;
+			height: 100px;
+			min-width: 1250px;
+			background-color: #c8a985;
+		}
+		.nav2 {
+			width: 1250px;
+			margin: 0 auto;
+			
+		}
+		.nav::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.nav p {
+			float: left;
+		}
+		.nav p:first-child {
+			color: #000;
+			font-size: 16px;
+			letter-spacing: 1px;
+			width: 275px;
+			height: 100px;
+			border-right: 1px solid #fff;
+			box-sizing: border-box;
+			padding: 18px 20px 18px;
+		}
+		.nav p:last-child {
+			color: #000;
+			width: 300px;
+			font-size: 16px;
+			letter-spacing: 1px;
+			height: 100px;
+			box-sizing: border-box;
+			padding: 18px 20px 18px;
+		}
+		.content {
+			width: 100%;
+		}
+		.content-all {
+			width: 1263px;
+			margin: 0 auto;
+		}
+		.content-all::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content-all div {
+			float: left;
+		}
+		.content-all .left-content {
+			width: 948px;
+			height: 1020px;
+		}
+		.content-box {
+			width: 865px;
+			height: 1020px;
+			margin-left: 41.5px;
+		}
+		.head-box {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.head-box .mybag{
+			float: left;
+			font-size: 26px;
+			color: #767676;
+			letter-spacing: 2px;
+			box-sizing: border-box;
+			padding: 75px 0 60px;
+			width: 400px;
+			border-bottom: 1px solid #ccc;
+		}
+		.head-box .tijiao {
+			float: right;
+			width: 465px;
+			height: 170px;
+			text-align: right;
+			letter-spacing: 2px;
+			border-bottom: 1px solid #ccc;
+		}
+		.tijiao a {
+			color: #767676;
+		}
+		.head-box .tijiao a:nth-child(1){
+			display: block;
+			width: 100px;
+			padding: 25px 0 25px 0;
+			transition:all 0.3s linear;
+			position: relative;
+			left: 360px;
+		}
+		.head-box .tijiao a:nth-child(2) {
+			font-size: 16px;
+			position: relative;
+			left: -20px;
+			transition:all 0.3s linear;
+		}
+		.head-box .tijiao a:nth-child(1):hover,
+		.head-box .tijiao a:nth-child(2):hover{
+			color: #000;
+		}
+		.head-box .tijiao a:nth-child(3) {
+			display: inline-block;
+			width: 205px;
+			height: 40px;
+			background-color: #533f34;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			transition: all 0.5s linear;
+		}
+		.head-box .tijiao a:nth-child(3):hover {
+			background-color: #000;
+		}
+		.content-all .right-content {
+			width: 315px;
+			height: 1020px;
+			background-color: rgba(153,153,153,0.2);
+			font-size: 16px;
+			letter-spacing: 2px;
+		}
+		.body-box>div {
+			width: 865px;
+			height: 187px;
+			border-bottom: 1px solid #ccc;
+		}
+		.body-box img {
+			box-sizing: border-box;
+			width: 157px;
+			border: 1px solid #ccc;
+			margin-top: 15px;
+		}
+		.bag1-nav {
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+		
+		.bag1-nav span:nth-child(1){
+			font-size: 24px;
+			letter-spacing: 2px;
+		}
+		.bag1-nav span:nth-child(1) ~ span {
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+		.bag1-nav i {
+			border: 1px solid #ccc;
+			padding: 5px;
+			position: relative;
+			top: 20px;
+			color: #533f34;
+			transition: all 0.4s linear;
+		}
+		.bag1-nav i:hover{
+			color: #000;
+			cursor: pointer;
+		}
+		.foot-box {
+			width: 865px;
+			height: 308px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.subtotal,.subtotal1{
+			width: 565px;
+			height: 70px;
+			margin-left: 300px;
+			line-height: 70px;
+			text-indent: 2em;
+		}
+		.subtotal p:first-child {
+			float: left;
+			color: #767676;
+			font-size: 15px;
+		}
+		.subtotal p:last-child {
+			float: right;
+			margin-right: 2em;
+			font-size: 15px;
+		}
+		.center {
+			width: 565px;
+			height: 150px;
+			margin-left: 300px;
+			background-color: rgba(153,153,153,0.3);
+		}
+		.center p{
+			font-size: 16px;
+			color: #5e5e60;
+			letter-spacing: 2px;
+			margin: 20px 0 0 20px;
+		}
+/*		.center input{
+			-webkit-appearance:radio;
+		}*/
+		.center label {
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+		.center label:first-child{
+			position: relative;
+			top: 10px;
+		}
+		.subtotal1 p:first-child {
+			float: left;
+			color: #533f34;
+			font-size: 20px;
+			letter-spacing: 2px;
+		}
+		.subtotal1 p:last-child {
+			float: right;
+			margin-right: 2em;
+			font-size: 20px;
+		}
+		.footing {
+			width: 865px;
+		}
+		.footing>ul>li:nth-child(1),
+		.footing>ul>li:nth-child(2){
+			float: left;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			padding: 10px 20px 10px 10px;
+			letter-spacing: 2px;
+			margin-top: 30px;
+		}
+		.footing>ul>li:nth-child(1)>a,
+		.footing>ul>li:nth-child(2)>a{
+			color: #533f34;
+			transition: all 0.3s linear;
+		}
+		.footing>ul>li:nth-child(2){
+			margin-left: 10px;
+		}
+		.footing>ul>li:nth-child(1)>a:hover,
+		.footing>ul>li:nth-child(2)>a:hover{
+			color: #000;
+		}
+		.footing>ul>li:nth-child(3){
+			float: right;
+			margin-top: 30px;
+			width: 180px;
+			background-color: #533f34;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			padding: 10px 20px 10px 10px;
+			letter-spacing: 2px;
+			text-align: center;
+			transition: all 0.5s linear;
+		}
+		.footing>ul>li:nth-child(3)>a {
+			color: #fff;
+			text-align: center;
+		}
+		.footing>ul>li:nth-child(3):hover {
+			background-color: #000;
+		}
+		.right-content .caption {
+			margin-top: 15px;
+			margin-left: 20px;
+		}
+		.right-content .caption i {
+			font-size: 25px;
+			position: relative;
+			left: -10px;
+			top: -3px;
+		}
+		.right-content .caption span {
+			font-size: 14px;
+			position: relative;
+			top: -8px;
+			left: -20px;
+		}
+		.right-nav {
+			margin-left: 20px;
+			margin-top: 50px;
+		}
+		.right-nav li {
+			font-size: 16px;
+			letter-spacing: 2px;
+			border-bottom: 1px solid #ccc;
+			height: 40px;
+			width: 275px;
+			line-height: 40px;
+		}
+		.right-nav li:hover {
+			cursor: pointer;
+		}
+		.right-nav li i {
+			font-size: 20px;	
+		}
+		
+		.money td{
+			border-collapse: collapse;
+		}
+		.money td:nth-child(1){
+			width: 65px;
+			height: 28px;
+			border-radius: 5%;
+			background-color: #e2e2e2;
+		}
+		.money td:nth-child(1)>select{
+			width: 40px;
+			height: 24px;
+			margin-left: 12.5px;
+		}
+		.money td:nth-child(1)>i{
+			position: absolute;
+			left: 650px;
+			top: 333px;
+		}
+		.money td:nth-child(2){
+			width: 12px;
+			border-top: 1px solid #e2e2e2;
+			border-bottom: 1px solid #e2e2e2;
+		}
+		.money td:nth-child(3){
+			width: 110px;
+			border-top: 1px solid #e2e2e2;
+			border-right: 1px solid #e2e2e2;
+			border-bottom: 1px solid #e2e2e2;
+			border-radius: 5%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<div class="head">
+			<ul class="nav1">
+				<li><a href="#">LOUIS VUITTON</a></li>
+				<li>LV NOW</li>
+				<li>路易威登世界</li>
+				<li>女士</li>
+				<li>男士</li>
+				<li>专卖店</li>
+				<li>
+					<i class="iconfont icon-search"></i>
+					<div class="sub-nav1">
+						<input type="text" placeholder="搜索建议：官网限定SPEEDY手袋">
+						<p>
+							<i class="iconfont icon-iconfontyoujiantou"></i>
+							搜索
+						</p>
+					</div>
+				</li>
+				<li><i class="iconfont icon-bag"></i></li>
+				<li><i class="iconfont icon-iconfontxin1"></i></li>
+				<li><i class="iconfont icon-lv"></i></li>
+				<li><i class="iconfont icon-wenhao"></i></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>400 6588 555</li>
+			</ul>
+		</div>
+		</div>
+		<div class="nav">
+		<div class="nav2">
+			<p>敬请致电 400 6588 555<br>工作时间：每天 10:00 - <br>20:00 </p>
+			<p>全国尊享顺丰免费配送</p>
+		</div>
+		</div>
+		<div class="content">
+		<div class="content-all">
+			<div class="left-content">
+				<div class="content-box">
+					<div class="head-box">
+						<div class="mybag">
+							我的购物袋（2项）
+						</div>
+						<div class="tijiao">
+							<a href="#">
+								<i class="iconfont icon-lock"></i>&nbsp;安全支付
+							</a>
+							<a href="#">
+								<i class="iconfont icon-arrows-f"></i>
+								继续选购
+							</a>
+							<a href="#">提交</a>
+						</div>
+					</div>
+					<div class="body-box">
+						<div class="bag1">
+							<div class="bag1-img">
+								<img src="./images/bao1.jpg" alt="">
+							</div>
+							<div class="bag1-nav">
+								<span>SPEEDY 30 手袋（官网限定款）</span><br>
+								<span>产品型号： M43989</span><br>
+								<span>产品颜色： Monogram</span><br>
+								<span>产品材质： MONOGRAM</span><br>
+								<i class="iconfont icon-trash"></i>
+							</div>
+							<div class="money">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<select name="count" id="change">
+													<option value="1" selected>1</option>
+													<option value="2">2</option>
+												</select>
+												<i class="iconfont icon-shangxiala"></i>
+											</td>
+											<td></td>
+											<td>￥15,200</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="bag2">
+							<div class="bag2-img">
+								<img src="./images/bao2.jpg" alt="">
+							</div>
+							<div class="bag1-nav">
+								<span>NEONOE 手袋</span><br>
+								<span>产品型号： M44022</span><br>
+								<span>产品颜色： 樱花粉</span><br>
+								<span>产品材质： MONOGRAM</span><br>
+								<i class="iconfont icon-trash"></i>
+							</div>
+						</div>
+					</div>
+					<div class="foot-box">
+						<div class="subtotal">
+							<p>小计：</p>
+							<p>￥27，000</p>
+						</div>
+						<div class="center">
+							<p>配送方式</p>
+							
+							<label for="send">
+								<input name="input" type="radio" id="send" checked>送货到府
+							</label><br>
+							
+							<label for="invite">
+								<input name="input" type="radio" id="invite">专卖店取货
+							</label>
+							
+						</div>
+						<div class="subtotal1">
+							<p>总金额：</p>
+							<p>￥27，000</p>
+						</div>
+					</div>
+					<div class="footing">
+						<ul>
+							<li><a href="#"><i class="iconfont icon-save"></i>保存我的购物袋</a></li>
+							<li><a href="#"><i class="iconfont icon-letter"></i>通过邮件分享</a></li>
+							<li><a href="#">提交</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="right-content">
+				<div class="caption">
+					<a href="#">
+						<p>&nbsp;&nbsp;&nbsp;顾客服务中心</p>
+						<i class="iconfont icon-phone"></i>
+						<span>400 6588 555</span>
+					</a>
+				</div>
+				<div class="right-nav">
+					<ul>
+						<li><i class="iconfont icon-arrows"></i>&nbsp;配送服务</li>
+						<li><i class="iconfont icon-arrows"></i>&nbsp;专卖店取货</li>
+						<li><i class="iconfont icon-arrows"></i>&nbsp;支付方式</li>
+						<li><i class="iconfont icon-arrows"></i>&nbsp;退换货服务</li>
+						<li><i class="iconfont icon-arrows"></i>&nbsp;顾客服务</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="footer">
+		<div class="foot">
+			<ul>
+				<li><a href="#">路易威登</a></li>
+				<li><a href="#">您可能感兴趣的内容</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="footer-nav">
+		<div class="foot-nav">
+			<ul>
+				<li><a href="#">中国</a></li>
+				<li><a href="#">订阅电子报</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">应用程序</a></li>
+				<li><a href="#">关注我们</a></li>
+				<li><a href="#">法律声明和隐私条款</a></li>
+				<li><a href="#">泸ICP备09069024号</a></li>
+				<li><a href="#">电子营业执照</a></li>
+				<li><a href="#">出版物经营许可证</a></li>
+				<li><a href="#">泸公网安备</a></li>
+				<li><a href="#">人力资源</a></li>
+				<li><a href="#">网站地址</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

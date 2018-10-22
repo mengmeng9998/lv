@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录注册</title>
+	<link rel="stylesheet" href="./css/commom.css">
+	<link rel="stylesheet" href="./css/head.css">
+	<link rel="stylesheet" href="./css/foot.css">
+	<link rel="stylesheet" href="./font/iconfont.css">
+	<link rel="stylesheet" href="./font2/iconfont.css">
+	<link rel="stylesheet" href="./css/erjidaohang.css">
+	<style>
+		.content {
+			width: 1010px;
+			height: 90px;
+			margin: 0 auto;
+			border-bottom: 1px solid #ccc;
+		}
+		.content::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.content ul li:first-child {
+			float: left;
+			font-size: 28px;
+			line-height: 90px;
+			letter-spacing: 1px;
+		}
+		.content ul li:last-child {
+			float: right;
+			font-size: 12px;
+			position: relative;
+			top: 60px;
+			letter-spacing: 1px;
+		}
+		.box {
+			width: 1010px;
+			height: 430px;
+			margin: 0 auto;
+		}
+		.box::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.box div {
+			float: left;
+		}
+		.left-box {
+			width: 505px;
+			height: 430px;
+		}
+		.left-box .caption {
+			font-size: 24px;
+			color: #000;
+			position: relative;
+			top: 23px;
+			left: 25px;
+		}
+		.left-box .enter {
+			width: 460px;
+			height: 330px;
+			margin-top: 70px;
+			margin-left: 25px;
+			font-size: 16px;
+		}
+		.enter a {
+			font-size: 12px;
+			letter-spacing: 2px;
+			text-decoration: solid underline #ccc;
+			position: relative;
+			top: 10px;
+			left: 310px;
+		}
+		.form p {
+			float: left;
+		}
+		.form .input {
+			float: right;
+			margin-left: 20px;
+		}
+		.form .input input {
+			box-sizing: border-box;
+			width: 300px;
+			height: 40px;
+			font-size: 16px;
+			padding-left: 10px;
+		}
+		.right-box {
+			width: 505px;
+			height: 430px;
+			background-color: rgba(153,153,153,0.2);
+		}
+		.right-box p:first-child {
+			height: 80px;
+			line-height: 80px;
+			margin-left: 20px;
+			font-size: 22px;
+			color: #000;
+			letter-spacing: 1px;
+		}
+		.right-box p:nth-child(2){
+			margin-left: 20px;
+			color: #5e5e60;
+		}
+		.right-box ul li {
+			font-size: 12px;
+			margin-top: 2px;
+			margin-left: 35px;
+			list-style: disc;
+			letter-spacing: 1px;
+			color: #5e5e60;
+		}
+		.right-box a,.dl a{
+			font-size: 16px;
+			letter-spacing: 2px;
+			color: #fff;
+			background-color: #533f34;
+			padding: 10px 20px;
+			position: relative;
+			top: 190px;
+			left: 20px;
+			transition: all 0.5s linear;
+		}
+		.dl a {
+			position:relative;
+			left: 0;
+			top:158px;
+		}
+		.right-box a:hover,.dl a:hover {
+			background-color: #000;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<div class="head">
+			<ul class="nav1">
+				<li><a href="#">LOUIS VUITTON</a></li>
+				<li>LV NOW</li>
+				<li>路易威登世界</li>
+				<li>女士</li>
+				<li>男士</li>
+				<li>专卖店</li>
+				<li>
+					<i class="iconfont icon-search"></i>
+					<div class="sub-nav1">
+						<input type="text" placeholder="搜索建议：官网限定SPEEDY手袋">
+						<p>
+							<i class="iconfont icon-iconfontyoujiantou"></i>
+							搜索
+						</p>
+					</div>
+				</li>
+				<li><i class="iconfont icon-bag"></i></li>
+				<li><i class="iconfont icon-iconfontxin1"></i></li>
+				<li><i class="iconfont icon-lv"></i></li>
+				<li><i class="iconfont icon-wenhao"></i></li>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li>400 6588 555</li>
+			</ul>
+		</div>
+		</div>
+		
+		<div class="content">
+			<ul>
+				<li>会员登录</li>
+				<li>必填项目*</li>
+			</ul>
+		</div>
+		<div class="box">
+			<!-- 左边整个框开始 -->
+			<div class="left-box">
+				<!-- 上框开始 -->
+				<div class="caption">
+					已有账户请登录
+				</div>
+				<!-- 上框结束 -->
+				<!-- 下框开始 -->
+				<div class="enter">
+					<!-- 第一个输入框开始 -->
+					<div class="form">
+						<p>用户名（手机号/电<br>子邮箱地址）*</p>
+						<div class="input">
+								<input type="text" name="user" placeholder="手机号/邮箱">
+						</div>
+					</div>
+					<!-- 第一个输入框结束 -->
+					<!-- 第二个输入框开始 -->
+					<div class="form" style="margin-top:20px">
+						<p>密码*</p>
+						<div class="input" style="margin-left:115.5px;">
+								<input type="text" name="user" id="one">
+						</div>
+					</div>
+					<!-- 第二个输入框结束 -->
+					<a href="#">忘记密码？</a>
+					<div class="dl">
+						<a href="#">登录</a>
+					</div>
+				</div>
+				<!-- 下框结束 -->
+			</div>
+			<!-- 左边结束 -->
+			<div class="right-box">
+				<p>我没有注册过任何账户</p>
+				<p>创建MyLV账户后，您可以通过任何设备：</p>
+				<ul>
+					<li>查询您的网上订单以及历史购买记录</li>
+					<li>管理您的个人信息</li>
+					<li>获取最新的路易威登电子报</li>
+					<li>储存您的购物袋及愿望清单</li>
+				</ul>
+				<a href="#">创建一个新的账户</a>
+			</div>
+		</div>
+		<div class="footer">
+		<div class="foot">
+			<ul>
+				<li><a href="#">路易威登</a></li>
+				<li><a href="#">您可能感兴趣的内容</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="footer-nav">
+		<div class="foot-nav">
+			<ul>
+				<li><a href="#">中国</a></li>
+				<li><a href="#">订阅电子报</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">应用程序</a></li>
+				<li><a href="#">关注我们</a></li>
+				<li><a href="#">法律声明和隐私条款</a></li>
+				<li><a href="#">泸ICP备09069024号</a></li>
+				<li><a href="#">电子营业执照</a></li>
+				<li><a href="#">出版物经营许可证</a></li>
+				<li><a href="#">泸公网安备</a></li>
+				<li><a href="#">人力资源</a></li>
+				<li><a href="#">网站地址</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
